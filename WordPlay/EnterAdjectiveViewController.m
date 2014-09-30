@@ -7,7 +7,7 @@
 //
 
 #import "EnterAdjectiveViewController.h"
-
+#import "ResultsViewController.h"
 @interface EnterAdjectiveViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *adjectiveTextField;
 
@@ -17,11 +17,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
 }
+
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
-    
+    ResultsViewController *resultsViewController = segue.destinationViewController;
+    resultsViewController.adjective = self.adjectiveTextField.text;
+    resultsViewController.name  = self.name;
 }
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

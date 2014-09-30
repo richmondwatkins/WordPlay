@@ -21,6 +21,12 @@
     // Do any additional setup after loading the view.
 }
 
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    EnterAdjectiveViewController *enterAdjectiveViewController = segue.destinationViewController;
+    enterAdjectiveViewController.name = self.nameTextField.text;
+
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
