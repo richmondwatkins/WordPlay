@@ -27,6 +27,16 @@
 
 }
 
+-(BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender{
+    BOOL rValue = NO;
+
+    if(self.nameTextField.text.length >  1){
+        rValue = YES;
+    }
+
+    return rValue;
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
