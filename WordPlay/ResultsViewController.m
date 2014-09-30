@@ -17,8 +17,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.resultsTextView.text = [NSString stringWithFormat:@"One day, %@ was walking into Mobile Makers when he noticed how %@ his students were.", self.name, self.adjective];
+    self.resultsTextView.text = [NSString stringWithFormat:@"%@ - %@ - %@ - %@", self.name, self.adjective, self.verb, self.preposition];
 }
+
+self.name = [[UIFont fontWithName:@"Gill Sans" size:16]];
+//[textField setFont:font];
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

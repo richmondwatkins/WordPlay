@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface EnterPrepositionViewController : UIViewController
-
+@property NSString *name;
+@property NSString *adjective;
+@property NSString *verb;
 @end

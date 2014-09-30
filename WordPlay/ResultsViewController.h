@@ -12,4 +12,6 @@
 
 @property NSString *adjective;
 @property NSString *name;
+@property NSString *verb;
+@property NSString *preposition;
 @end

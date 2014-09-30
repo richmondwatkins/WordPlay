@@ -7,9 +7,11 @@
 //
 
 #import "EnterPrepositionViewController.h"
+#import "ResultsViewController.h"
 
 @interface EnterPrepositionViewController ()
 
+@property (strong, nonatomic) IBOutlet UITextField *prepositionTextField;
 @end
 
 @implementation EnterPrepositionViewController
@@ -17,6 +19,24 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    ResultsViewController *resultsViewController = segue.destinationViewController;
+    resultsViewController.adjective = self.adjective;
+    resultsViewController.verb = self.verb;
+    resultsViewController.name  = self.name;
+    resultsViewController.preposition = self.prepositionTextField.text;
+}
+
+-(BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender{
+    BOOL rValue = NO;
+
+    if(self.prepositionTextField.text.length){
+        rValue = YES;
+    }
+
+    return rValue;
 }
 
 - (void)didReceiveMemoryWarning {
