@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B05BBBE19DB449300B6D9D7 /* EnterAdjectiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B05BBBD19DB449300B6D9D7 /* EnterAdjectiveViewController.m */; };
+		3B05BBC119DB458600B6D9D7 /* ResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B05BBC019DB458600B6D9D7 /* ResultsViewController.m */; };
 		5D81F5BC19DB3E6400208AD6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D81F5BB19DB3E6400208AD6 /* main.m */; };
 		5D81F5BF19DB3E6400208AD6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D81F5BE19DB3E6400208AD6 /* AppDelegate.m */; };
 		5D81F5C219DB3E6400208AD6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D81F5C119DB3E6400208AD6 /* ViewController.m */; };
@@ -28,6 +30,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3B05BBBC19DB449300B6D9D7 /* EnterAdjectiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnterAdjectiveViewController.h; sourceTree = "<group>"; };
+		3B05BBBD19DB449300B6D9D7 /* EnterAdjectiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnterAdjectiveViewController.m; sourceTree = "<group>"; };
+		3B05BBBF19DB458600B6D9D7 /* ResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultsViewController.h; sourceTree = "<group>"; };
+		3B05BBC019DB458600B6D9D7 /* ResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultsViewController.m; sourceTree = "<group>"; };
 		5D81F5B619DB3E6400208AD6 /* WordPlay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordPlay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D81F5BA19DB3E6400208AD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5D81F5BB19DB3E6400208AD6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -89,6 +95,10 @@
 				5D81F5C019DB3E6400208AD6 /* ViewController.h */,
 				5D81F5C119DB3E6400208AD6 /* ViewController.m */,
 				5D81F5C319DB3E6400208AD6 /* Main.storyboard */,
+				3B05BBBF19DB458600B6D9D7 /* ResultsViewController.h */,
+				3B05BBC019DB458600B6D9D7 /* ResultsViewController.m */,
+				3B05BBBC19DB449300B6D9D7 /* EnterAdjectiveViewController.h */,
+				3B05BBBD19DB449300B6D9D7 /* EnterAdjectiveViewController.m */,
 				5D81F5DF19DB422300208AD6 /* EnterNameViewController.h */,
 				5D81F5E019DB422300208AD6 /* EnterNameViewController.m */,
 				5D81F5C619DB3E6400208AD6 /* Images.xcassets */,
@@ -226,6 +236,8 @@
 			files = (
 				5D81F5C219DB3E6400208AD6 /* ViewController.m in Sources */,
 				5D81F5BF19DB3E6400208AD6 /* AppDelegate.m in Sources */,
+				3B05BBBE19DB449300B6D9D7 /* EnterAdjectiveViewController.m in Sources */,
+				3B05BBC119DB458600B6D9D7 /* ResultsViewController.m in Sources */,
 				5D81F5E119DB422300208AD6 /* EnterNameViewController.m in Sources */,
 				5D81F5BC19DB3E6400208AD6 /* main.m in Sources */,
 			);
@@ -418,6 +430,7 @@
 				5D81F5DB19DB3E6400208AD6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5D81F5DC19DB3E6400208AD6 /* Build configuration list for PBXNativeTarget "WordPlayTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +439,7 @@
 				5D81F5DE19DB3E6400208AD6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

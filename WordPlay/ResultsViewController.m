@@ -1,20 +1,19 @@
 //
-//  EnterNameViewController.m
+//  ResultsViewController.m
 //  WordPlay
 //
-//  Created by Richmond on 9/30/14.
+//  Created by Vikas Bhakta on 9/30/14.
 //  Copyright (c) 2014 Richmond. All rights reserved.
 //
 
-#import "EnterNameViewController.h"
-#import "EnterAdjectiveViewController.h"
+#import "ResultsViewController.h"
 
-@interface EnterNameViewController ()
-@property (strong, nonatomic) IBOutlet UITextField *nameTextField;
+@interface ResultsViewController ()
+@property (weak, nonatomic) IBOutlet UITextView *resultsTextView;
 
 @end
 
-@implementation EnterNameViewController
+@implementation ResultsViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
