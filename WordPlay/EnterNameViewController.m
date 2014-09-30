@@ -30,7 +30,7 @@
 -(BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender{
     BOOL rValue = NO;
 
-    if(self.nameTextField.text.length >  1){
+    if(self.nameTextField.text.length){
         rValue = YES;
     }
 

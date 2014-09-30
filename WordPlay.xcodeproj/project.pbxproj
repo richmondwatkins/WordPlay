@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		3B05BBBE19DB449300B6D9D7 /* EnterAdjectiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B05BBBD19DB449300B6D9D7 /* EnterAdjectiveViewController.m */; };
 		3B05BBC119DB458600B6D9D7 /* ResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B05BBC019DB458600B6D9D7 /* ResultsViewController.m */; };
+		3B05BBC419DB5A7200B6D9D7 /* EnterVerbViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B05BBC319DB5A7200B6D9D7 /* EnterVerbViewController.m */; };
+		3B05BBC719DB5B5900B6D9D7 /* EnterPrepositionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B05BBC619DB5B5900B6D9D7 /* EnterPrepositionViewController.m */; };
 		5D81F5BC19DB3E6400208AD6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D81F5BB19DB3E6400208AD6 /* main.m */; };
 		5D81F5BF19DB3E6400208AD6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D81F5BE19DB3E6400208AD6 /* AppDelegate.m */; };
 		5D81F5C219DB3E6400208AD6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D81F5C119DB3E6400208AD6 /* ViewController.m */; };
@@ -34,6 +36,10 @@
 		3B05BBBD19DB449300B6D9D7 /* EnterAdjectiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnterAdjectiveViewController.m; sourceTree = "<group>"; };
 		3B05BBBF19DB458600B6D9D7 /* ResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultsViewController.h; sourceTree = "<group>"; };
 		3B05BBC019DB458600B6D9D7 /* ResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultsViewController.m; sourceTree = "<group>"; };
+		3B05BBC219DB5A7200B6D9D7 /* EnterVerbViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnterVerbViewController.h; sourceTree = "<group>"; };
+		3B05BBC319DB5A7200B6D9D7 /* EnterVerbViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnterVerbViewController.m; sourceTree = "<group>"; };
+		3B05BBC519DB5B5900B6D9D7 /* EnterPrepositionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnterPrepositionViewController.h; sourceTree = "<group>"; };
+		3B05BBC619DB5B5900B6D9D7 /* EnterPrepositionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnterPrepositionViewController.m; sourceTree = "<group>"; };
 		5D81F5B619DB3E6400208AD6 /* WordPlay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordPlay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D81F5BA19DB3E6400208AD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5D81F5BB19DB3E6400208AD6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -95,6 +101,10 @@
 				5D81F5C019DB3E6400208AD6 /* ViewController.h */,
 				5D81F5C119DB3E6400208AD6 /* ViewController.m */,
 				5D81F5C319DB3E6400208AD6 /* Main.storyboard */,
+				3B05BBC519DB5B5900B6D9D7 /* EnterPrepositionViewController.h */,
+				3B05BBC619DB5B5900B6D9D7 /* EnterPrepositionViewController.m */,
+				3B05BBC219DB5A7200B6D9D7 /* EnterVerbViewController.h */,
+				3B05BBC319DB5A7200B6D9D7 /* EnterVerbViewController.m */,
 				3B05BBBF19DB458600B6D9D7 /* ResultsViewController.h */,
 				3B05BBC019DB458600B6D9D7 /* ResultsViewController.m */,
 				3B05BBBC19DB449300B6D9D7 /* EnterAdjectiveViewController.h */,
@@ -234,7 +244,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B05BBC719DB5B5900B6D9D7 /* EnterPrepositionViewController.m in Sources */,
 				5D81F5C219DB3E6400208AD6 /* ViewController.m in Sources */,
+				3B05BBC419DB5A7200B6D9D7 /* EnterVerbViewController.m in Sources */,
 				5D81F5BF19DB3E6400208AD6 /* AppDelegate.m in Sources */,
 				3B05BBBE19DB449300B6D9D7 /* EnterAdjectiveViewController.m in Sources */,
 				3B05BBC119DB458600B6D9D7 /* ResultsViewController.m in Sources */,

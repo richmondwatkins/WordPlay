@@ -8,6 +8,7 @@
 
 #import "EnterAdjectiveViewController.h"
 #import "ResultsViewController.h"
+#import "EnterVerbViewController.h"
 @interface EnterAdjectiveViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *adjectiveTextField;
 
@@ -20,9 +21,19 @@
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
-    ResultsViewController *resultsViewController = segue.destinationViewController;
-    resultsViewController.adjective = self.adjectiveTextField.text;
-    resultsViewController.name  = self.name;
+    EnterVerbViewController *enterVerbViewController = segue.destinationViewController;
+    enterVerbViewController.adjective = self.adjectiveTextField.text;
+    enterVerbViewController.name  = self.name;
+}
+
+-(BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender{
+    BOOL rValue = NO;
+
+    if(self.adjectiveTextField.text.length){
+        rValue = YES;
+    }
+
+    return rValue;
 }
 
 - (void)didReceiveMemoryWarning {
