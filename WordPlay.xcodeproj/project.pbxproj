@@ -14,6 +14,7 @@
 		5D81F5C719DB3E6400208AD6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D81F5C619DB3E6400208AD6 /* Images.xcassets */; };
 		5D81F5CA19DB3E6400208AD6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D81F5C819DB3E6400208AD6 /* LaunchScreen.xib */; };
 		5D81F5D619DB3E6400208AD6 /* WordPlayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D81F5D519DB3E6400208AD6 /* WordPlayTests.m */; };
+		5D81F5E119DB422300208AD6 /* EnterNameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D81F5E019DB422300208AD6 /* EnterNameViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		5D81F5CF19DB3E6400208AD6 /* WordPlayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WordPlayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D81F5D419DB3E6400208AD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5D81F5D519DB3E6400208AD6 /* WordPlayTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WordPlayTests.m; sourceTree = "<group>"; };
+		5D81F5DF19DB422300208AD6 /* EnterNameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnterNameViewController.h; sourceTree = "<group>"; };
+		5D81F5E019DB422300208AD6 /* EnterNameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnterNameViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +89,8 @@
 				5D81F5C019DB3E6400208AD6 /* ViewController.h */,
 				5D81F5C119DB3E6400208AD6 /* ViewController.m */,
 				5D81F5C319DB3E6400208AD6 /* Main.storyboard */,
+				5D81F5DF19DB422300208AD6 /* EnterNameViewController.h */,
+				5D81F5E019DB422300208AD6 /* EnterNameViewController.m */,
 				5D81F5C619DB3E6400208AD6 /* Images.xcassets */,
 				5D81F5C819DB3E6400208AD6 /* LaunchScreen.xib */,
 				5D81F5B919DB3E6400208AD6 /* Supporting Files */,
@@ -221,6 +226,7 @@
 			files = (
 				5D81F5C219DB3E6400208AD6 /* ViewController.m in Sources */,
 				5D81F5BF19DB3E6400208AD6 /* AppDelegate.m in Sources */,
+				5D81F5E119DB422300208AD6 /* EnterNameViewController.m in Sources */,
 				5D81F5BC19DB3E6400208AD6 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
