@@ -17,7 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.resultsTextView = [NSString stringWithFormat:@"One day, %@ was walking into Mobile Makers when he noticed how %@ his students were.", self.name, self.adjective];
+    self.resultsTextView.text = [NSString stringWithFormat:@"One day, %@ was walking into Mobile Makers when he noticed how %@ his students were.", self.name, self.adjective];
 }
 
 - (void)didReceiveMemoryWarning {

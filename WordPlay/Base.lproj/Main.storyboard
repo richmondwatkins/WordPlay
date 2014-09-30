@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="loD-BN-gEp">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="loD-BN-gEp">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
@@ -21,8 +21,8 @@
                                 <state key="normal" title="Let's play mad libs!">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="134" y="229" width="133" height="30"/>
+                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="110" y="231" width="180" height="30"/>
                                 </variation>
                                 <connections>
                                     <segue destination="mUH-gU-L1z" kind="show" id="Jwc-id-sqT"/>
@@ -30,14 +30,23 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="TI0-Te-zSA" secondAttribute="centerX" id="OyG-H4-VP8"/>
+                        </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="TI0-Te-zSA"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="OyG-H4-VP8"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="TI0-Te-zSA"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="OyG-H4-VP8"/>
                             </mask>
                         </variation>
                     </view>
@@ -59,12 +68,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter a name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HWR-1A-Yml">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter a name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HWR-1A-Yml">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
+                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
                                     <rect key="frame" x="151" y="156" width="102" height="21"/>
                                 </variation>
                             </label>
@@ -72,8 +81,8 @@
                                 <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="161" y="225" width="97" height="30"/>
+                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="156" y="266" width="97" height="30"/>
                                 </variation>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1vr-9o-hOo">
@@ -81,8 +90,8 @@
                                 <state key="normal" title="Next">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="186" y="297" width="32" height="30"/>
+                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="184" y="393" width="32" height="30"/>
                                 </variation>
                                 <connections>
                                     <segue destination="Uow-Ez-Hu3" kind="show" id="5WK-vV-dzw"/>
@@ -90,11 +99,21 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="HWR-1A-Yml" secondAttribute="centerX" id="6pJ-Nb-d3f"/>
+                            <constraint firstAttribute="centerX" secondItem="UDm-Z7-dzF" secondAttribute="centerX" id="EYk-Yb-Tk4"/>
+                            <constraint firstAttribute="centerX" secondItem="1vr-9o-hOo" secondAttribute="centerX" id="OF3-31-YLL"/>
+                        </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="HWR-1A-Yml"/>
                                 <exclude reference="UDm-Z7-dzF"/>
                                 <exclude reference="1vr-9o-hOo"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="6pJ-Nb-d3f"/>
+                                <exclude reference="EYk-Yb-Tk4"/>
+                                <exclude reference="OF3-31-YLL"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -102,6 +121,11 @@
                                 <include reference="HWR-1A-Yml"/>
                                 <include reference="UDm-Z7-dzF"/>
                                 <include reference="1vr-9o-hOo"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="6pJ-Nb-d3f"/>
+                                <include reference="EYk-Yb-Tk4"/>
+                                <include reference="OF3-31-YLL"/>
                             </mask>
                         </variation>
                     </view>
@@ -111,7 +135,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Qb-kI-4CP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2044.5" y="372"/>
+            <point key="canvasLocation" x="1999.5" y="372"/>
         </scene>
         <!--Enter Adjective View Controller-->
         <scene sceneID="FbO-Pf-ILd">
@@ -129,8 +153,8 @@
                                 <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="166" y="171" width="97" height="30"/>
+                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="152" y="250" width="97" height="30"/>
                                 </variation>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter an adjective" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2bI-gS-5zg">
@@ -138,8 +162,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="157" y="235" width="138" height="21"/>
+                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="131" y="105" width="138" height="21"/>
                                 </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="car-C7-Kdt">
@@ -147,8 +171,8 @@
                                 <state key="normal" title="See Mad Lib">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="171" y="100" width="87" height="30"/>
+                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="157" y="414" width="87" height="30"/>
                                 </variation>
                                 <connections>
                                     <segue destination="Edn-a6-uYQ" kind="show" id="V3Y-2X-2yA"/>
@@ -156,11 +180,21 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="car-C7-Kdt" secondAttribute="centerX" id="UNG-12-vVY"/>
+                            <constraint firstAttribute="centerX" secondItem="GD4-5O-rd9" secondAttribute="centerX" id="X3G-wM-i6f"/>
+                            <constraint firstAttribute="centerX" secondItem="2bI-gS-5zg" secondAttribute="centerX" id="YOl-Kr-uxh"/>
+                        </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="GD4-5O-rd9"/>
                                 <exclude reference="2bI-gS-5zg"/>
                                 <exclude reference="car-C7-Kdt"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="YOl-Kr-uxh"/>
+                                <exclude reference="X3G-wM-i6f"/>
+                                <exclude reference="UNG-12-vVY"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -168,6 +202,11 @@
                                 <include reference="GD4-5O-rd9"/>
                                 <include reference="2bI-gS-5zg"/>
                                 <include reference="car-C7-Kdt"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="YOl-Kr-uxh"/>
+                                <include reference="X3G-wM-i6f"/>
+                                <include reference="UNG-12-vVY"/>
                             </mask>
                         </variation>
                     </view>
@@ -194,23 +233,48 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wVY-4a-g7z">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="7" y="35" width="400" height="600"/>
+                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="112" y="145" width="176" height="214"/>
                                 </variation>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="myj-fm-jUa">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Start Over">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="165" y="472" width="70" height="30"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="zdN-wt-Tfp" kind="unwind" unwindAction="unwindFromSegue:" id="Y9N-re-6Rh"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="wVY-4a-g7z" secondAttribute="centerX" id="Anj-IL-1yk"/>
+                            <constraint firstAttribute="centerX" secondItem="myj-fm-jUa" secondAttribute="centerX" id="TmR-Ta-y8Y"/>
+                        </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="wVY-4a-g7z"/>
+                                <exclude reference="myj-fm-jUa"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="Anj-IL-1yk"/>
+                                <exclude reference="TmR-Ta-y8Y"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="wVY-4a-g7z"/>
+                                <include reference="myj-fm-jUa"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="Anj-IL-1yk"/>
+                                <include reference="TmR-Ta-y8Y"/>
                             </mask>
                         </variation>
                     </view>
@@ -219,6 +283,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1wz-nQ-SXv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="zdN-wt-Tfp" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="3352.5" y="372"/>
         </scene>
